@@ -1,0 +1,1 @@
+[then]Add Rules Fired = RulesFired ruleFired = new RulesFired(); ruleFired.setRuleFiredString(drools.getRule().getName());
