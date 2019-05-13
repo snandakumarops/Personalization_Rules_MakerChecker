@@ -1,2 +1,9 @@
 package com.another.personalization_rules;
+global java.util.List executedRules;
+rule "Init Transaction"
+when
+    
+then
+   executedRules = new java.util.ArrayList();
+end
 
