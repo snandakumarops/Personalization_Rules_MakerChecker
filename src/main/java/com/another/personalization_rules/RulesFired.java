@@ -6,12 +6,23 @@ package com.another.personalization_rules;
 
 public class RulesFired implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public RulesFired() {
-    }
+	private java.lang.String ruleFiredString;
 
+	public RulesFired() {
+	}
 
+	public java.lang.String getRuleFiredString() {
+		return this.ruleFiredString;
+	}
 
+	public void setRuleFiredString(java.lang.String ruleFiredString) {
+		this.ruleFiredString = ruleFiredString;
+	}
+
+	public RulesFired(java.lang.String ruleFiredString) {
+		this.ruleFiredString = ruleFiredString;
+	}
 
 }
