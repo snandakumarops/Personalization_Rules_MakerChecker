@@ -121,7 +121,7 @@
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
           <text>com.another.personalization_rules.RulesFired rulesFired = new com.another.personalization_rules.RulesFired();
 rulesFired.setRuleFiredString(&quot;Event ::&quot;+event.getEventCategory()+&quot;:&quot;+event.getEventValue()+&quot;:Customer Context::&quot;+
-							  cust.getCustomerAttribute()+&quot;::&quot;drools.getRule().getName());
+							  cust.getCustomerAttribute()+&quot;::&quot;+drools.getRule().getName());
 insert(rulesFired);</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
