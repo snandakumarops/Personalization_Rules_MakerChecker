@@ -114,20 +114,20 @@
       <isInsertLogical>false</isInsertLogical>
     </insert-fact-column52>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-      <hideColumn>true</hideColumn>
+      <hideColumn>false</hideColumn>
       <width>-1</width>
       <header>RulesFired</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
           <text>com.another.personalization_rules.RulesFired rulesFired = new com.another.personalization_rules.RulesFired();
 rulesFired.setRuleFiredString(event.getEventCategory()+&quot;:&quot;+event.getEventValue()+&quot;:&quot;+
-							  cust.getCustomerAttribute()+&quot;:&quot;+drools.getRule().getName()+&quot;:&quot;+eventAnalysis.getEventEffectiveness()+&quot;:&quot;+eventAnalysis.getEventResponsePayload());
+							  cust.getCustomerAttribute()+&quot;:&quot;+drools.getRule().getName()+&quot;:&quot;+eventanalysis.getEventEffectiveness()+&quot;:&quot;+eventanalysis.getEventResponsePayload());
 insert(rulesFired);</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>true</hideColumn>
+          <hideColumn>false</hideColumn>
           <width>100</width>
           <header>RulesFired</header>
           <varName></varName>
