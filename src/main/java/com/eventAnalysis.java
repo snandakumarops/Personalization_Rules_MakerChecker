@@ -17,7 +17,7 @@ public class eventAnalysis implements java.io.Serializable {
 
 	public eventAnalysis() {
 	    
-	    this.ruleFired = drools.getRule().getName();
+	    
 	}
 
 	public java.lang.String getEventEffectiveness() {
