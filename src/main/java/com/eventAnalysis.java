@@ -49,8 +49,6 @@ public class eventAnalysis implements java.io.Serializable {
 		this.ruleFired = ruleFired;
 	}
 	
-	public void setValueRuleFired(String ruleFired) {
-	    this.ruleFired = ruleFired;
-	}
+	
 
 }
