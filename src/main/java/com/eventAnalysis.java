@@ -8,10 +8,12 @@ public class eventAnalysis implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "eventEffectiveness")
+	@org.kie.api.definition.type.Label("eventEffectiveness")
 	private java.lang.String eventEffectiveness;
-	@org.kie.api.definition.type.Label(value = "eventResponsePayload")
+	@org.kie.api.definition.type.Label("eventResponsePayload")
 	private java.lang.String eventResponsePayload;
+
+	private java.lang.String ruleFired;
 
 	public eventAnalysis() {
 	}
@@ -32,21 +34,19 @@ public class eventAnalysis implements java.io.Serializable {
 		this.eventResponsePayload = eventResponsePayload;
 	}
 
+	public java.lang.String getRuleFired() {
+		return this.ruleFired;
+	}
+
+	public void setRuleFired(java.lang.String ruleFired) {
+		this.ruleFired = ruleFired;
+	}
+
 	public eventAnalysis(java.lang.String eventEffectiveness,
-			java.lang.String eventResponsePayload) {
+			java.lang.String eventResponsePayload, java.lang.String ruleFired) {
 		this.eventEffectiveness = eventEffectiveness;
 		this.eventResponsePayload = eventResponsePayload;
+		this.ruleFired = ruleFired;
 	}
-	
-	public boolean equals(Object obj) 
-    {
-        eventAnalysis event = (eventAnalysis)obj;
-        return event.getEventResponsePayload().equals(this.getEventResponsePayload());
-    }
-    public int hashCode() 
-    {
-     return 1;   
-    }
-
 
 }
