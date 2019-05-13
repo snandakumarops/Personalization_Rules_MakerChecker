@@ -120,8 +120,8 @@
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
           <text>com.another.personalization_rules.RulesFired rulesFired = new com.another.personalization_rules.RulesFired();
-rulesFired.setRuleFiredString(event.getEventCategory()+&quot;:&quot;+event.getEventValue()+&quot;:&quot;+
-							  cust.getCustomerAttribute()+&quot;:&quot;+drools.getRule().getName()+&quot;:&quot;+eventanalysis.getEventEffectiveness()+&quot;:&quot;+eventanalysis.getEventResponsePayload());
+rulesFired.setRuleFiredString(drools.getRule().getName()+&quot;::&quot;+event.getEventCategory()+&quot;:&quot;+event.getEventValue()+&quot;:&quot;+
+							  cust.getCustomerAttribute()+&quot;:&quot;+&quot;:&quot;+eventanalysis.getEventEffectiveness()+&quot;:&quot;+eventanalysis.getEventResponsePayload());
 insert(rulesFired);</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
