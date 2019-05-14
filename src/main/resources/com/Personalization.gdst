@@ -301,7 +301,7 @@ insert(rulesFired);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Consider making use of our Balance Transfer option today.</valueString>
+        <valueString>Consider making use of our Balance Transfer option today.-CHANGED</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
