@@ -48,17 +48,7 @@
   </dependencies>
   <build>
     <plugins>
-      <plugin>
-        <groupId>se.jiderhamn</groupId>
-        <artifactId>promote-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>make-promotable</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+      
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
