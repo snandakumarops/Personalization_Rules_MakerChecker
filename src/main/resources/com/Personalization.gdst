@@ -257,7 +257,7 @@ insert(rulesFired);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Upgrade to Gold Premium Card today and enjoy airline benifits </valueString>
+        <valueString>Upgrade to Gold Premium Card today and enjoy airline benifits - CHANGED</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
