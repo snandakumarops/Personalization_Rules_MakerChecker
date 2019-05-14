@@ -49,8 +49,8 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>com.redhat</groupId>
-        <artifactId>Personalization_Rules</artifactId>
+        <groupId>se.jiderhamn</groupId>
+        <artifactId>promote-maven-plugin</artifactId>
         <executions>
           <execution>
             <goals>
