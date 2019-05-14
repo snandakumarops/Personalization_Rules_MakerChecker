@@ -47,7 +47,20 @@
     </dependency>
   </dependencies>
   <build>
+   
     <plugins>
+      <plugin>
+        <groupId>com.redhat</groupId>
+        <artifactId>Personalization_Rules</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>make-promotable</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
