@@ -345,7 +345,7 @@ insert(rulesFired);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Expedite Resolution Process -changed</valueString>
+        <valueString>Expedite Resolution Process </valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
