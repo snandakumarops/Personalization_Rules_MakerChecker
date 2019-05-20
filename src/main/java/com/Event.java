@@ -8,15 +8,13 @@ public class Event implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "EventCategory")
+	@org.kie.api.definition.type.Label("EventCategory")
 	private java.lang.String eventCategory;
-	@org.kie.api.definition.type.Label(value = "EventValue")
+	@org.kie.api.definition.type.Label("EventValue")
 	private java.lang.String eventValue;
-	@org.kie.api.definition.type.Label(value = "EventSource")
+	@org.kie.api.definition.type.Label("EventSource")
 	private java.lang.String eventSource;
-	@org.kie.api.definition.type.Label(value = "EventDate")
-	private java.util.Date eventDate;
-	@org.kie.api.definition.type.Label(value = "eventId")
+	@org.kie.api.definition.type.Label("eventId")
 	private java.lang.String eventId;
 
 	public Event() {
@@ -46,14 +44,6 @@ public class Event implements java.io.Serializable {
 		this.eventSource = eventSource;
 	}
 
-	public java.util.Date getEventDate() {
-		return this.eventDate;
-	}
-
-	public void setEventDate(java.util.Date eventDate) {
-		this.eventDate = eventDate;
-	}
-
 	public java.lang.String getEventId() {
 		return this.eventId;
 	}
@@ -63,12 +53,10 @@ public class Event implements java.io.Serializable {
 	}
 
 	public Event(java.lang.String eventCategory, java.lang.String eventValue,
-			java.lang.String eventSource, java.util.Date eventDate,
-			java.lang.String eventId) {
+			java.lang.String eventSource, java.lang.String eventId) {
 		this.eventCategory = eventCategory;
 		this.eventValue = eventValue;
 		this.eventSource = eventSource;
-		this.eventDate = eventDate;
 		this.eventId = eventId;
 	}
 
