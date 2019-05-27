@@ -119,7 +119,7 @@
       <header>rulesfired</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>com.another.personalization_rules.RulesFired rulesFired = new com.another.personalization_rules.RulesFired();
+          <text>RulesFired rulesFired = new RulesFired();
 rulesFired.setEventCategory(event.getEventCategory());
 rulesFired.setEventValue(event.getEventValue());
 rulesFired.setCustomerHistory(cust.getCustomerAttribute());
