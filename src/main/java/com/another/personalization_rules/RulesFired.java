@@ -83,12 +83,21 @@ public class RulesFired implements java.io.Serializable {
     this.getEventResponsePayload().equals(obj.getEventResponsePayload())) {
             return true; 
     }else {
-        return false
+        return false;
     }
           
     
     } 
   
+  
+      
+    @Override
+    public int hashCode() 
+    { 
+          
+
+        return this.id; 
+    } 
 
 
 }
