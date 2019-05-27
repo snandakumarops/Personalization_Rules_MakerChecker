@@ -16,7 +16,7 @@ public class RulesFired implements java.io.Serializable {
 
 	private java.lang.String eventEffectiveness;
 
-	private java.lang.String eventResponsePayload;
+	private java.util.List<java.lang.String> eventResponsePayload;
 
 	public RulesFired() {
 	}
@@ -53,18 +53,19 @@ public class RulesFired implements java.io.Serializable {
 		this.eventEffectiveness = eventEffectiveness;
 	}
 
-	public java.lang.String getEventResponsePayload() {
+	public java.util.List<java.lang.String> getEventResponsePayload() {
 		return this.eventResponsePayload;
 	}
 
-	public void setEventResponsePayload(java.lang.String eventResponsePayload) {
+	public void setEventResponsePayload(
+			java.util.List<java.lang.String> eventResponsePayload) {
 		this.eventResponsePayload = eventResponsePayload;
 	}
 
 	public RulesFired(java.lang.String eventCategory,
 			java.lang.String eventValue, java.lang.String customerHistory,
 			java.lang.String eventEffectiveness,
-			java.lang.String eventResponsePayload) {
+			java.util.List<java.lang.String> eventResponsePayload) {
 		this.eventCategory = eventCategory;
 		this.eventValue = eventValue;
 		this.customerHistory = customerHistory;
