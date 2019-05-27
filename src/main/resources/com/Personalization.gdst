@@ -116,12 +116,15 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>RulesFired</header>
+      <header>rulesfired</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
           <text>com.another.personalization_rules.RulesFired rulesFired = new com.another.personalization_rules.RulesFired();
-rulesFired.setRuleFiredString(drools.getRule().getName()+&quot;::&quot;+event.getEventCategory()+&quot;:&quot;+event.getEventValue()+&quot;:&quot;+
-							  cust.getCustomerAttribute()+&quot;:&quot;+&quot;:&quot;+eventanalysis.getEventEffectiveness()+&quot;:&quot;+eventanalysis.getEventResponsePayload());
+rulesFired.setEventCategory(event.getEventCategory());
+rulesFired.setEventValue(event.getEventValue());
+rulesFired.setCustomerHistory(cust.getCustomerAttribute());
+rulesFired.setEventEffectiveness(eventanalysis.getEventEffectiveness());
+rulesFired.setEventResponsePayload(eventanalysis.getEventResponsePayload());
 insert(rulesFired);</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
@@ -129,7 +132,7 @@ insert(rulesFired);</text>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>RulesFired</header>
+          <header>rulesfired</header>
           <varName></varName>
           <fieldType>Boolean</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
