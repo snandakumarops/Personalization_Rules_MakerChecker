@@ -76,11 +76,7 @@ public class RulesFired implements java.io.Serializable {
     public boolean equals(Object obj) 
     { 
     com.RulesFired rulesFired = (com.RulesFired)obj;      
-   if(getEventCategory().equals(rulesFired.getEventCategory()))) {
-            return true; 
-    }else {
-        return false;
-    }
+    return Objects.equals(eventCategory,rulesFired.getEventCategory());
    
           
     
