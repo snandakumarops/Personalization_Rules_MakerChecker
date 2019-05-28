@@ -74,12 +74,13 @@ public class RulesFired implements java.io.Serializable {
 	
     @Override
     public boolean equals(Object obj) { 
-        return true;
+        RulesFired rulesFired = (RulesFired)obj;      
+        return Objects.equals(eventCategory,rulesFired.getEventCategory());
     } 
   
   
       
-   
+   @Override
     public int hashCode() 
     { 
           
