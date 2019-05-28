@@ -82,6 +82,10 @@ public class RulesFired implements java.io.Serializable {
      java.util.Objects.equals(getEventResponsePayload(),rulesFired.getEventResponsePayload());
     } 
   
+  public String toString() 
+    { 
+        return getEventCategory() + " " + getEventValue() + " " + getCustomerHistory() + " " + getEventEffectiveness() + " " + getEventResponsePayload(); 
+    } 
   
       
    @Override
