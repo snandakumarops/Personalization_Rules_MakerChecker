@@ -72,7 +72,7 @@ public class RulesFired implements java.io.Serializable {
 		this.eventResponsePayload = eventResponsePayload;
 	}
 	
-    
+    @Override
     public boolean equals(Object obj) { 
     RulesFired rulesFired = (RulesFired)obj;      
     return Objects.equals(eventCategory,rulesFired.getEventCategory());
