@@ -421,7 +421,7 @@ insert(rulesFired);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>MIN_DUE</valueString>
+        <valueString>CASE_CREATED</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
