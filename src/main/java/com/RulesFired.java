@@ -92,7 +92,11 @@ public class RulesFired implements java.io.Serializable {
     @Override
     public boolean equals(Object o) {
         com.RulesFired ruleCheck = (RulesFired)o;
-        return java.util.Objects.equals(this.eventCategory,ruleCheck.getEventCategory());
+        return java.util.Objects.equals(this.eventCategory,ruleCheck.getEventCategory()) &&
+         java.util.Objects.equals(this.eventValue,ruleCheck.getEventValue()) &&
+          java.util.Objects.equals(this.customerHistory,ruleCheck.getCustomerHistory()) &&
+           java.util.Objects.equals(this.eventEffectiveness,ruleCheck.getEventEffectiveness()) &&
+            java.util.Objects.equals(this.eventResponsePayload,ruleCheck.getEventResponsePayload());
     }
     
     	@Override
