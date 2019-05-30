@@ -89,8 +89,8 @@ public class RulesFired implements java.io.Serializable {
 		this.ruleString = ruleString;
 	}
 	
-	@Override
-    public boolean equals(com.RulesFired o) {
+    @Override
+    public boolean equals(RulesFired o) {
         return java.util.Objects.equals(o.eventCategory,o.getEventCategory());
     }
     
@@ -98,7 +98,7 @@ public class RulesFired implements java.io.Serializable {
     	public int hashCode(){
     	    return 12;
     	    
-    	}
+    	
     	}
 
 }
