@@ -90,7 +90,7 @@ public class RulesFired implements java.io.Serializable,java.lang.Comparable {
 	}
 	
 	@Override
-    public int compareTo( final RulesFired o) {
+    public int compareTo( final com.RulesFired o) {
         return String.compare(this.ruleString, o.ruleString);
     }
 
