@@ -18,6 +18,8 @@ public class RulesFired implements java.io.Serializable {
 
 	private String eventResponsePayload;
 
+	private java.lang.String ruleString;
+
 	public RulesFired() {
 	}
 
@@ -61,39 +63,30 @@ public class RulesFired implements java.io.Serializable {
 		this.eventResponsePayload = eventResponsePayload;
 	}
 
+	public String toString() {
+		return getEventCategory() + " " + getEventValue() + " "
+				+ getCustomerHistory() + " " + getEventEffectiveness() + " "
+				+ getEventResponsePayload();
+	}
+
+	public java.lang.String getRuleString() {
+		return this.ruleString;
+	}
+
+	public void setRuleString(java.lang.String ruleString) {
+		this.ruleString = ruleString;
+	}
+
 	public RulesFired(java.lang.String eventCategory,
 			java.lang.String eventValue, java.lang.String customerHistory,
 			java.lang.String eventEffectiveness,
-			java.lang.String eventResponsePayload) {
+			java.lang.String eventResponsePayload, java.lang.String ruleString) {
 		this.eventCategory = eventCategory;
 		this.eventValue = eventValue;
 		this.customerHistory = customerHistory;
 		this.eventEffectiveness = eventEffectiveness;
 		this.eventResponsePayload = eventResponsePayload;
+		this.ruleString = ruleString;
 	}
-	
-    @Override
-    public boolean equals(Object obj) { 
-        RulesFired rulesFired = (RulesFired)obj;      
-        return java.util.Objects.equals(getEventCategory(),rulesFired.getEventCategory())
-        &&  java.util.Objects.equals(getEventValue(),rulesFired.getEventValue()) && 
-   java.util.Objects.equals(getCustomerHistory(),rulesFired.getCustomerHistory()) && 
-    java.util.Objects.equals(getEventEffectiveness(),rulesFired.getEventEffectiveness()) && 
-     java.util.Objects.equals(getEventResponsePayload(),rulesFired.getEventResponsePayload());
-    } 
-  
-  public String toString() 
-    { 
-        return getEventCategory() + " " + getEventValue() + " " + getCustomerHistory() + " " + getEventEffectiveness() + " " + getEventResponsePayload(); 
-    } 
-  
-      
-   @Override
-    public int hashCode() 
-    { 
-          
-
-        return 10; 
-    } 
 
 }
