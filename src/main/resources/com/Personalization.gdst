@@ -125,6 +125,7 @@ rulesFired.setEventValue(event.getEventValue());
 rulesFired.setCustomerHistory(cust.getCustomerAttribute());
 rulesFired.setEventEffectiveness(eventanalysis.getEventEffectiveness());
 rulesFired.setEventResponsePayload(eventanalysis.getEventResponsePayload());
+rulesFired.setRuleString(drools.getRule().getName());
 insert(rulesFired);</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
