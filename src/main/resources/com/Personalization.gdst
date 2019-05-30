@@ -432,7 +432,7 @@ insert(rulesFired);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>ALERT</valueString>
+        <valueString>REMINDER</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
