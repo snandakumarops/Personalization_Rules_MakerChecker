@@ -116,7 +116,7 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>rulesfired</header>
+      <header>Rule Active?</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
           <text>RulesFired rulesFired = new RulesFired();
@@ -133,7 +133,7 @@ insert(rulesFired);</text>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>rulesfired</header>
+          <header>Rule Active?</header>
           <varName></varName>
           <fieldType>Boolean</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
