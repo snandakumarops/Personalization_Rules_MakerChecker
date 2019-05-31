@@ -393,7 +393,7 @@ insert(rulesFired);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Late payment because of failed attempt, broadcast to all channels</valueString>
+        <valueString>Late payment because of failed attempt, broadcast to all channels, changed desc</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
