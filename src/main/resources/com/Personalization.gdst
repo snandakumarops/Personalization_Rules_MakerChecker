@@ -339,7 +339,7 @@ insert(rulesFired);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>DISSATISFACTION_QUOTIENT</valueString>
+        <valueString>DELINQUENCY_INDEX</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
