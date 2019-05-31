@@ -300,7 +300,7 @@ insert(rulesFired);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>OFFER</valueString>
+        <valueString>ALERT</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
